@@ -1,8 +1,8 @@
 pipeline:
-  image_to_quay:
+  branch_image_to_quay:
     image: quay.io/ukhomeofficedigital/drone-docker
     secrets:
-      - DOCKER_QUAY_PASSWORD
+      - DOCKER_PASSWORD
     environment:
       - DOCKER_USERNAME=ukhomeofficedigital+egar
     registry: quay.io
@@ -17,7 +17,7 @@ pipeline:
   image_to_quay:
     image: quay.io/ukhomeofficedigital/drone-docker
     secrets:
-      - DOCKER_QUAY_PASSWORD
+      - DOCKER_PASSWORD
     environment:
       - DOCKER_USERNAME=ukhomeofficedigital+egar
     registry: quay.io
@@ -31,7 +31,7 @@ pipeline:
   tagged_image_to_quay:
     image: quay.io/ukhomeofficedigital/drone-docker
     secrets:
-      - DOCKER_QUAY_PASSWORD
+      - DOCKER_PASSWORD
     environment:
       - DOCKER_USERNAME=ukhomeofficedigital+egar
     registry: quay.io
